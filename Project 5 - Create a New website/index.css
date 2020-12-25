@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,500&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-font: "Playfair Display", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --primary-backbg: black;
+  --primary-color: white;
+  --secondary-backbg: white;
+  --secondary-color: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 2% 10%;
+  overflow-x: hidden;
+  font-family: var(--primary-font);
+  background-color: var(--primary-backbg);
+  color: var(--primary-color);
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.wrap-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.content-desc h2 {
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.forest-span {
+  color: deepskyblue;
+}
+
+.hike-span {
+  color: mediumpurple;
+}
+
+.fashion-span {
+  color: burlywood;
+}
+
+.pic {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-bar-contents {
+  padding: 0 10%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  background-color: var(--secondary-backbg);
+  color: var(--secondary-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(30px at 100% -10%);
+  -webkit-clip-path: circle(30px at 100% -10%);
+}
+
+.details,
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+.social-links h1 {
+  padding: 3rem;
+}
+
+.details h1 {
+  padding-bottom: 5rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.details p {
+  padding: 0 2rem;
+}
+
+.reveal-text,
+.reveal-img {
+  background-color: var(--secondary-color);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  border: 1px solid;
+  font-size: 1rem;
+}
+
+button a {
+  text-decoration: none;
+  color: burlywood;
+}
+
+/*****************************Fashion page CSS**************************************/
+.cover-container {
+  display: grid;
+  flex-direction: column;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  text-align: center;
+}
+
+.fashion {
+  height: 80vh;
+}
+
+.picture {
+  text-align: center;
+}
+
+.descr p {
+  padding: 0 15%;
+  text-align: left;
+}
+
+.primary {
+  background-color: #283e51;
+}
+
+.blurring {
+  filter: blur(30px);
+}
+
+.loading-text {
+  position: absolute;
+  font-size: 2rem;
+  left: 50%;
+  top: 20%;
+  z-index: 1;
+  filter: blur(0px);
+}
+
+.bars {
+  cursor: pointer;
+}
+
+.fa-times {
+  position: absolute;
+  right: 10%;
+  top: 8%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.descr h2 {
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.descr {
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  font-size: 2rem;
+  left: 0;
+  bottom: -50%;
+}

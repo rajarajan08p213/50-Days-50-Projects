@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.number-inactive {
+  border: 4px grey solid;
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.line-inactive {
+  width: 5rem;
+  border-style: none none solid none;
+  border-color: grey;
+  border-width: 4px;
+}
+
+button {
+  margin-left: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#prev {
+  margin-left: 45%;
+}
+
+.disabled-btn {
+  border: none;
+  color: grey;
+}
+
+.active-btn {
+  color: black;
+  background-color: lightskyblue;
+  border-color: lightskyblue;
+  outline: none;
+}
+
+.active {
+  border-color: lightskyblue;
+}
